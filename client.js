@@ -7,7 +7,6 @@ const connect = function() {
   const conn = net.createConnection({
     host: '192.168.88.177',
     port: 50541
-    //name: 'VLD'
   });
   conn.on('data', data => {
     console.log('Server says: ', data);
@@ -27,3 +26,4 @@ const connect = function() {
 };
 
 module.exports = { connect };
+//console.log('Move: up');
